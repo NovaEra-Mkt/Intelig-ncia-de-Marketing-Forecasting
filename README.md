@@ -5,7 +5,7 @@
 Plataforma de Inteligência de Marketing baseada em dados, com foco em **análise de clientes, campanhas e previsão de comportamento**, incluindo recomendações automatizadas (**Next Best Action**).
 
 
-## 🎯 Objetivo
+ 🎯 Objetivo
 
 Transformar dados brutos em decisões estratégicas, permitindo:
 
@@ -14,8 +14,7 @@ Transformar dados brutos em decisões estratégicas, permitindo:
 * 📢 Análise de campanhas de marketing
 * 🎯 Recomendação da melhor ação por cliente
 
-
-## 🧠 Arquitetura
+ 🧠 Arquitetura
 
 O projeto segue uma arquitetura modular baseada em pipelines de dados:
 
@@ -23,7 +22,7 @@ O projeto segue uma arquitetura modular baseada em pipelines de dados:
 Dados → Customer Analytics → Campaign Analytics → Forecasting → NBA → Coordinator
 
 
-### 🔹 Módulos
+ 🔹 Módulos
 
 * **01_retrieval** → Ingestão de dados
 * **02_customer_analytics** → Segmentação (RFM)
@@ -33,7 +32,7 @@ Dados → Customer Analytics → Campaign Analytics → Forecasting → NBA → 
 * **06_coordinator** → Orquestração do pipeline
 
 
-## 🏗️ Tecnologias
+ 🏗️ Tecnologias
 
 * Apache Spark (Databricks)
 * PySpark
@@ -42,9 +41,8 @@ Dados → Customer Analytics → Campaign Analytics → Forecasting → NBA → 
 
 
 
-## 📊 Funcionalidades
-
-### 👤 Customer Analytics
+ 📊 Funcionalidades
+ 👤 Customer Analytics
 
 * Segmentação RFM (Recência, Frequência, Valor)
 * Classificação de clientes:
@@ -54,15 +52,13 @@ Dados → Customer Analytics → Campaign Analytics → Forecasting → NBA → 
   * Em risco
   * Normal
 
-
-### 📢 Campaign Analytics
+ 📢 Campaign Analytics
 
 * Análise de conversão
 * Performance por segmento
 * Simulação de campanhas
 
-
-### 📈 Forecasting (Machine Learning)
+📈 Forecasting (Machine Learning)
 
 Modelo baseado em Gradient Boosting com:
 
@@ -74,7 +70,7 @@ Modelo baseado em Gradient Boosting com:
 * Promoções
 
 
-### 🎯 Next Best Action (NBA)
+🎯 Next Best Action (NBA)
 
 Recomenda ações como:
 
@@ -82,8 +78,7 @@ Recomenda ações como:
 * Enviar desconto
 * Campanha padrão
 
-
-## 🔮 Diferencial
+ 🔮 Diferencial
 
 O modelo não considera apenas histórico de vendas, mas também:
 
@@ -94,7 +89,7 @@ O modelo não considera apenas histórico de vendas, mas também:
 Permitindo simulação de cenários e decisões mais assertivas.
 
 
-## 🚀 Como usar
+🚀 Como usar
 
 1. Executar o módulo `01_retrieval`
 2. Rodar os módulos em sequência:
@@ -105,25 +100,22 @@ Permitindo simulação de cenários e decisões mais assertivas.
    * Next Best Action
 3. Executar o `06_coordinator` para pipeline completo
 
-
+│
 ## 📂 Estrutura do Projeto
 
-
-/Marketing-Intelligence
+```
+/Inteligência de Marketing
 │
-├── 01_retrieval
-├── 02_customer_analytics
-├── 03_campaign_analytics
-├── 04_forecasting
-├── 05_next_best_action
-└── 06_coordinator
+├── 01_recuperação
+├── 02_análise_de_clientes
+├── 03_análise_de_campanhas
+├── 04_previsão
+├── 05_próxima_melhor_ação
+└── 06_coordenador
+```
 
 
-
-
-
-
-## 📌 Próximos Passos
+ 📌 Próximos Passos
 
 * Integração com dados reais
 * Deploy de dashboard (Streamlit)
