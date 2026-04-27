@@ -121,6 +121,8 @@ Permitindo simulação de cenários e decisões mais assertivas.
 
 
 
+
+
 ## 📌 Próximos Passos
 
 * Integração com dados reais
