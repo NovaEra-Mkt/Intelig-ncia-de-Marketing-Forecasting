@@ -100,7 +100,6 @@ Permitindo simulação de cenários e decisões mais assertivas.
    * Next Best Action
 3. Executar o `06_coordinator` para pipeline completo
 
-│
 ## 📂 Estrutura do Projeto
 
 ```
